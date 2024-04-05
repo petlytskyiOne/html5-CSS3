@@ -10,16 +10,14 @@ https://www.youtube.com/watch?v=xxVHjPJ8mUE
 git clone https://github.com/petlytskyiOne/html.git
 cd html
 git status
+git add . / git add -A
+git commit -m "add"
+git push
+git pull
+git
+Esc :wq
 
 
-
-dir
-git clone
-git status
-git add .
-git add -A
-
-echo "# html" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
