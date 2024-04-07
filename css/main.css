@@ -38,10 +38,11 @@ header {
   padding: 50px 0;
 }
 
-header .logo {
+header .logo,
+footer .blocks .logo {
   text-transform: uppercase;
   font-size: 29px;
-  font-weight: 800px;
+  font-weight: 800;
 }
 
 header nav {
@@ -298,7 +299,7 @@ header nav ul li.btn a:hover,
   border-radius: 10px;
   padding: 40px 3%;
   width: 94%;
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -338,4 +339,54 @@ header nav ul li.btn a:hover,
   position: relative;
   z-index: 2;
   color: #fff;
+}
+
+footer {
+  background: #000;
+  padding: 50px 0;
+}
+
+footer .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .blocks p {
+  width: 300px;
+  margin: 15px 0;
+}
+
+footer .blocks h4 {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+footer .blocks ul {
+  list-style: none;
+}
+
+footer .blocks ul li {
+  margin-top: 7px;
+  opacity: 0.6;
+}
+
+footer hr {
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background: #ccc;
+}
+
+footer > p {
+  text-align: center;
+}
+
+.hero-about .info {
+  width: 500px;
+  padding: 50px;
+}
+
+.hero-about .info h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
 }
