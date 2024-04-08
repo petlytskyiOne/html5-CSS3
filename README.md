@@ -1,6 +1,7 @@
 # html
 
 https://www.youtube.com/watch?v=ICY-l3W_lDc
+https://itproger.com/ua/courses/page-3
 
 Live Server
 https://fonts.google.com/specimen/Poppins?query=popp
