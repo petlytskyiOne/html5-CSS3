@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   color: #fff;
   font-size: 16px;
+  background: #000;
 }
 
 a {
@@ -21,11 +22,9 @@ img {
 }
 
 .wrapper {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(26, 14, 1, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(26, 14, 1, 1) 100%);
   width: 100%;
   overflow-x: hidden;
 }
@@ -380,7 +379,7 @@ footer hr {
   background: #ccc;
 }
 
-footer > p {
+footer>p {
   text-align: center;
 }
 
@@ -420,4 +419,98 @@ footer > p {
 .work .blocks {
   display: flex;
   justify-content: space-between;
+}
+
+.work .blocks .block {
+  width: 25%;
+  border-radius: 10px;
+  padding: 50px 35px;
+  background: #1C140F;
+}
+
+.work .blocks .block h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.work .blocks .block .badge {
+  border-radius: 7px;
+  padding: 10px 20px;
+}
+
+.work .blocks .block .badge.purple {
+  background: #560F67;
+}
+
+.work .blocks .block .badge.brown {
+  background: #31190D;
+}
+
+.work .blocks .block .badge.green {
+  background: #192A1D;
+}
+
+.hero-contacts h1 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 33px;
+}
+
+.hero-contacts p {
+  text-align: center;
+}
+
+.hero-contacts img {
+  width: 70%;
+  margin: 80px 15%;
+}
+
+.feedback {
+  padding: 70px 0;
+  background: #1C140F;
+}
+
+.feedback h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.feedback p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.feedback form {
+  margin: 80px auto;
+  width: 600px;
+}
+
+.feedback form .inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback form .inline>div {
+  width: 50%;
+}
+
+.feedback form label {
+  color: #4F4F4F;
+  font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+  background: #2C2420;
+  border-radius: 10px;
+  border: 0.6px solid #CECECE;
+  display: block;
+  width: 90%;
+  padding: 15px 10px;
+  outline: none;
+  color: #fff;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
