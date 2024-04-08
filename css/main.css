@@ -514,3 +514,27 @@ footer>p {
   margin-top: 7px;
   margin-bottom: 20px;
 }
+
+.feedback form .one-line {
+  width: 95%;
+}
+
+.feedback form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.feedback form button {
+  background: #dc7000;
+  border-radius: 5px;
+  border: 0;
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px 36px;
+  transition: all 50ms ease;
+}
+
+.feedback form button:hover {
+  background: #b01414;
+}
