@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gime Website</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
 
   <body>
@@ -13,11 +13,11 @@
         <span class="logo">logo</span>
         <nav>
           <ul>
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="#">About us</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">News</a></li>
-            <li class="btn"><a href="/public/contacts.html">Contacts</a></li>
+            <li class="btn"><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
       </header>
@@ -33,7 +33,7 @@
           </p>
           <button class="btn">Get in touch</button>
         </div>
-        <img src="/img/BB1kXB7C.jpeg" alt="" />
+        <img src="../img/BB1kXB7C.jpeg" alt="" />
       </div>
 
       <div class="container work">
@@ -107,14 +107,5 @@
       <hr />
       <p>Copyright Lorem ipsum dolor sit amet.</p>
     </footer>
-
-    <script>
-      function chackEmail() {
-        let email = document.querySelector("#emailField").value;
-        if (!email.includes("@")) alert("no character @");
-        else if (!email.includes(".")) alert("no character .");
-        else alert("Ok!");
-      }
-    </script>
   </body>
 </html>
