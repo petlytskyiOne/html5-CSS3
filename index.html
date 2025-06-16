@@ -9,8 +9,9 @@
 
   <body>
     <div class="wrapper">
-      <header class="container">
-        <span class="logo">logo</span>
+      <header class="container" id="mainHeader"></header>
+      <!-- <header class="container"> !
+        <span class="logo">logo</span> !
         <nav>
           <ul>
             <li class="active"><a href="/">Home</a></li>
@@ -20,9 +21,9 @@
             <li class="btn"><a href="public/contacts.html">Contacts</a></li>
           </ul>
         </nav>
-      </header>
-
-      <div class="hero container">
+      </header> -->
+      <div id="heroPlaceholder"></div>
+      <!-- <div class="hero container">
         <div class="hero--info">
           <h2>3D geme Dev</h2>
           <h1>Work that we produce for our clients</h1>
@@ -38,9 +39,10 @@
             alt=""
           />
         </div>
-      </div>
+      </div> -->
 
-      <div class="container trending">
+      <div id="trendingPlaceholder" style="display: none"></div>
+      <!-- <div class="container trending">
         <a href="#" class="see-all">SEE ALL</a>
         <h3>Currently Trending Games</h3>
 
@@ -94,18 +96,18 @@
             >
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="container big-text">
+      <!-- <div class="container big-text">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iste
           voluptatum exercitationem quasi esse quidem perferendis, enim quam
           ipsum, tenetur reprehenderit voluptas consequatur nulla facere
           dignissimos odio excepturi atque voluptatem.
         </p>
-      </div>
+      </div> -->
 
-      <div class="container banner">
+      <!-- <div class="container banner">
         <h3>Lorem Ipsum</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -117,10 +119,10 @@
           src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1kXB7C.img?w=800&h=435&q=60&m=2&f=jpg"
           alt=""
         />
-      </div>
+      </div> -->
     </div>
 
-    <div class="features">
+    <!-- <div class="features">
       <div class="container">
         <h3>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet
@@ -201,9 +203,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <div class="container projects">
         <h3>Our Recent Projects</h3>
         <p>
@@ -259,14 +261,18 @@
             </p>
           </div>
           <div>
-            <input type="email" id="emailField" placeholder="Enter email" />
-            <button onclick="chackEmail()">Continue</button>
+            <input
+              type="email"
+              id="emailField"
+              placeholder="example@gmail.com"
+            />
+            <button onclick="checkEmail()">Continue</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <footer>
+    <!-- <footer>
       <div class="blocks container">
         <div>
           <span class="logo">logo</span>
@@ -299,15 +305,8 @@
       </div>
       <hr />
       <p>Copyright Lorem ipsum dolor sit amet.</p>
-    </footer>
+    </footer> -->
 
-    <script>
-      function chackEmail() {
-        let email = document.querySelector("#emailField").value;
-        if (!email.includes("@")) alert("no character @");
-        else if (!email.includes(".")) alert("no character .");
-        else alert("Ok!");
-      }
-    </script>
+    <script type="module" src="./doc/main.js"></script>
   </body>
 </html>
