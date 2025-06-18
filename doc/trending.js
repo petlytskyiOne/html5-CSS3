@@ -1,6 +1,9 @@
 // trendingSection.js
 
 export function createTrendingSection() {
+  const section = document.createElement("section");
+  section.id = "trending";
+
   const trendingData = [
     {
       img: "https://img.freepik.com/premium-photo/alfa-romeo-brera-concept-car_923209-6392.jpg",
@@ -61,6 +64,10 @@ export function createTrendingSection() {
   trending.appendChild(h3);
   trending.appendChild(gamesDiv);
 
-  const placeholder = document.getElementById("trendingPlaceholder");
-  if (placeholder) placeholder.appendChild(trending);
+  // 🔑 Додаємо все в секцію
+  section.appendChild(trending);
+
+  // 🔑 Вставляємо секцію в <main>
+  const main = document.querySelector("main");
+  if (main) main.appendChild(section);
 }

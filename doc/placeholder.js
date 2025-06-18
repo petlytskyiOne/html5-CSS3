@@ -1,6 +1,9 @@
 // heroSection.js
 
 export function createHeroSection() {
+  const section = document.createElement("section");
+  section.id = "placeholder";
+
   const hero = document.createElement("div");
   hero.className = "hero container";
 
@@ -33,6 +36,10 @@ export function createHeroSection() {
   info.appendChild(img);
   hero.appendChild(info);
 
-  const placeholder = document.getElementById("heroPlaceholder");
-  if (placeholder) placeholder.appendChild(hero);
+  // 🔑 Додаємо все в секцію
+  section.appendChild(hero);
+
+  // 🔑 Вставляємо секцію в <main>
+  const main = document.querySelector("main");
+  if (main) main.appendChild(section);
 }
